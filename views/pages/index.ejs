@@ -10,6 +10,17 @@
 <body>
     <%- include('../navigate.ejs')%>
         <!-- <H2>ok goggle</H2> -->
+        <main>
+            <% books.forEach((singlebook)=> { %>
+                <div>
+                    <img src="<%- singlebook.image%>" />
+                    <h1>
+                        <%-singlebook.title%>
+                    </h1>
+                </div>
+
+                <% }) %>
+        </main>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ const app = express(); // initialize express
 const route = express.Router();
 // making json file to read so requiring fs library
 const fs = require("fs");
+app.use(express.static("public")); // to use css do this and folder
 
 // setting viewengine to view ejs file
 app.set("view engine", "ejs");
