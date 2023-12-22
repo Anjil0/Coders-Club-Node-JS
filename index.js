@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 //   res.send("hello world");
 // });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("pages/index.ejs");
 });
 
